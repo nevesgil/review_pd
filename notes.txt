@@ -1,0 +1,17 @@
+row - axis=0
+column - axis=1
+
+
+we can access components of a dataframe via index, column and value
+
+columns type index
+rows type array
+
+the inplace parameter mutates the df
+
+rows can be added using the dataframe constructor and concating the rows into the existing dataframe
+
+
+when performing any tranformation that requires reviewing the index it is necessary to reset it
+for example, when concating 2 dataframes, their indexes will be unchangable and may repeat in this new combined dataframe
+
