@@ -15,3 +15,21 @@ rows can be added using the dataframe constructor and concating the rows into th
 when performing any tranformation that requires reviewing the index it is necessary to reset it
 for example, when concating 2 dataframes, their indexes will be unchangable and may repeat in this new combined dataframe
 
+
+selecting a single column using square brackets returns a series
+if more than 1 column, the returned object is a dataframe
+
+just like lists, we can select using slicing as well
+df[x:y] -- x is where the row starts; y is where the row ends counting from one
+
+
+using loc
+df.loc[x:y] -- x is where we start, y is where the row ends based on index counting from zero
+or
+df.loc[[1,2,3]] --via indexes
+or
+df.loc[first:last:step]
+
+loc can be used to select the index value
+
+iloc works just like loc, but with integers instead of labels
