@@ -33,3 +33,9 @@ df.loc[first:last:step]
 loc can be used to select the index value
 
 iloc works just like loc, but with integers instead of labels
+
+
+selection based on content:
+example:
+
+df.loc[df["col"]=="somevalue"]
