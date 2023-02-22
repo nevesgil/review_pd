@@ -39,3 +39,8 @@ selection based on content:
 example:
 
 df.loc[df["col"]=="somevalue"]
+
+
+
+##########
+
